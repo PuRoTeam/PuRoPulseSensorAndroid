@@ -1,0 +1,70 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" >
+
+    <!-- Login form -->
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pulse" >
+		
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:orientation="vertical" >
+			
+            <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="50dp"
+		        android:layout_marginBottom="50dp"
+		        android:text="@string/arduino_pulse_login"
+		        android:gravity="center"
+		        android:textColor="@color/sysWhite"
+		        android:textSize="25sp" />
+            
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_user"
+                android:maxLines="1"
+                android:textColor="@color/sysWhite"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/sysWhite"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/action_sign_in_register" 
+        	    android:alpha="0.9"
+    	        android:background="@color/sysBlack"
+	            android:gravity="center"
+            	android:textAlignment="center"
+            	android:textColor="@color/sysWhite"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

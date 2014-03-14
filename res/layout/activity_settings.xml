@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sysBlack"
+    tools:context=".Second_activity" 
+    android:paddingLeft="20dp">
+    
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ip"
+        android:textAlignment="textStart"
+        android:textColor="@color/sysWhite"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:id="@+id/ipaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/sysWhite"
+        android:hint="@string/ip_hint" >
+ 
+        <requestFocus />
+    </EditText>
+ 
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save" />
+
+    
+ 
+</LinearLayout>
